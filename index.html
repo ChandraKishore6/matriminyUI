@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matrimony SaaS Premium UX/UI System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header glass">
+    <a class="brand" href="#landing" aria-label="Matrimony SaaS home"><span class="brand-mark">M</span><span>MatrimonyOS</span></a>
+    <nav class="header-nav" aria-label="Prototype navigation">
+      <a href="#design-system">Design System</a><a href="#user-flow">User</a><a href="#bureau-admin">Bureau Admin</a><a href="#master-admin">Master Admin</a>
+    </nav>
+    <a class="btn btn-primary" href="#prototype-map">Prototype Map</a>
+  </header>
+
+  <main>
+    <section id="landing" class="hero frame desktop-frame">
+      <div class="hero-copy">
+        <div class="eyebrow">Premium multi-bureau matrimony SaaS</div>
+        <h1>Connecting Families, Building Futures</h1>
+        <p>Elegant, trusted matchmaking workflows for families, users, bureau administrators, and master SaaS operators.</p>
+        <div class="actions"><a class="btn btn-primary" href="#registration">Submit Profile</a><a class="btn btn-secondary" href="#login">Login</a></div>
+        <div class="stats-grid" aria-label="Platform statistics">
+          <article><strong>128+</strong><span>Active Bureaus</span></article><article><strong>42K</strong><span>Active Profiles</span></article><article><strong>9.6K</strong><span>Successful Matches</span></article>
+        </div>
+      </div>
+      <div class="hero-visual card-luxe">
+        <div class="couple-photo" role="img" aria-label="Premium couple imagery placeholder"></div>
+        <div class="floating-card"><span class="status-dot"></span> Verified family profile</div>
+      </div>
+    </section>
+
+    <section class="section" id="design-system">
+      <div class="section-heading"><span class="eyebrow">Figma-ready foundations</span><h2>Complete Design System</h2><p>Tokens, components, states, spacing, and handoff notes for production teams.</p></div>
+      <div class="token-grid">
+        <article class="token royal">Royal Blue<br><b>#123C8C</b></article><article class="token gold">Heritage Gold<br><b>#D6A23A</b></article><article class="token success">Success<br><b>#16A36B</b></article><article class="token warning">Warning<br><b>#E8A317</b></article><article class="token error">Error<br><b>#D94A4A</b></article><article class="token bg">Soft Gray<br><b>#F6F8FC</b></article>
+      </div>
+      <div class="component-board">
+        <article class="spec-card"><h3>Typography</h3><p class="display-sample">Display / 64 / -2%</p><p class="h-sample">Heading / 32 / 120%</p><p>Body / 16 / 160% — optimized for high readability across forms and dashboards.</p><small>Labels / 13 / 600 • Captions / 12 / 140%</small></article>
+        <article class="spec-card"><h3>Components</h3><div class="actions wrap"><button class="btn btn-primary">Primary</button><button class="btn btn-secondary">Secondary</button><button class="btn btn-ghost">Ghost</button></div><input class="input" value="Elegant input field"><select class="input"><option>Dropdown selection</option></select></article>
+        <article class="spec-card"><h3>States</h3><div class="alert success-alert">Success — profile approved</div><div class="alert warning-alert">Loading — reviewing bureau</div><div class="empty-state">Empty state: No matches yet</div><div class="alert error-alert">Error — missing required detail</div></article>
+      </div>
+    </section>
+
+    <section class="section split" id="user-flow">
+      <div class="section-heading"><span class="eyebrow">User experience</span><h2>Landing, Registration, Login, Dashboard & Matches</h2></div>
+      <div class="screen-grid">
+        <article id="registration" class="screen card-luxe"><div class="screen-top"><b>Registration Wizard</b><span>Step 5 of 7</span></div><div class="progress"><span style="width:72%"></span></div><h3>Partner Preferences</h3><div class="form-grid"><input class="input" placeholder="Age range"><input class="input" placeholder="Community"><input class="input" placeholder="Location"><input class="input" placeholder="Education"></div><div class="upload-box">Drag photos here • Select cover image</div><button class="btn btn-primary full">Review & Submit</button></article>
+        <article id="login" class="screen login-card glass"><span class="brand-mark center">M</span><h3>Welcome back</h3><select class="input"><option>Select bureau</option></select><input class="input" placeholder="Email"><input class="input" placeholder="Password" type="password"><div class="row"><label><input type="checkbox"> Show password</label><a href="#">Forgot?</a></div><button class="btn btn-primary full">Login</button></article>
+        <article class="screen"><div class="mini-nav"><b>User Dashboard</b><span>Profile • Matches • Account</span></div><div class="metric-row"><div class="metric"><b>Approved</b><small>Profile Status</small></div><div class="metric"><b>24</b><small>Available Matches</small></div></div><div class="progress"><span style="width:86%"></span></div><div class="profile-carousel"><div class="profile-card">Aarav • 29 • Architect</div><div class="profile-card">Isha • 27 • Product Lead</div></div></article>
+        <article class="screen wide"><div class="filters"><b>Filters</b><span>Gender</span><span>Age</span><span>Community</span><span>Location</span></div><div class="profile-list"><div class="premium-profile"><div class="profile-cover"></div><h3>Riya Shah, 28</h3><p>UX Designer • Gujarati • Ahmedabad</p></div><div class="premium-profile"><div class="profile-cover two"></div><h3>Karan Mehta, 31</h3><p>Founder • Jain • Pune</p></div></div></article>
+        <article class="screen wide"><div class="detail-cover"></div><h3>Match Details</h3><div class="detail-grid"><section>Personal Information</section><section>Professional Information</section><section>Community</section><section>Partner Preferences</section><section>Contact Information</section></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="bureau-admin">
+      <div class="section-heading"><span class="eyebrow">Subdomain bureau portal</span><h2>Bureau Admin Dashboard, Pending Profiles & Review</h2></div>
+      <div class="dashboard-frame"><aside class="sidebar"><b>MatrimonyOS Bureau</b><a>Dashboard</a><a>Pending Profiles</a><a>Approved Profiles</a><a>Rejected Profiles</a><a>Settings</a></aside><div class="dash-content"><div class="metric-row four"><div class="metric"><b>1,284</b><small>Total Profiles</small></div><div class="metric"><b>46</b><small>Pending Reviews</small></div><div class="metric"><b>1,112</b><small>Approved</small></div><div class="metric"><b>126</b><small>Rejected</small></div></div><div class="chart-card">Monthly Registrations / Approval Rate Chart</div><table><thead><tr><th>Photo</th><th>Name</th><th>Gender</th><th>Community</th><th>Submitted</th><th>Actions</th></tr></thead><tbody><tr><td>👤</td><td>Priya Desai</td><td>Female</td><td>Marathi</td><td>24 Jun 2026</td><td>View · Approve · Reject</td></tr></tbody></table><div class="review-panel"><b>Sticky Action Panel</b><button class="btn btn-primary">Approve</button><button class="btn btn-secondary">Reject</button><button class="btn btn-ghost">Set User Password</button></div></div></div>
+    </section>
+
+    <section class="section" id="master-admin">
+      <div class="section-heading"><span class="eyebrow">Premium SaaS operations</span><h2>Master Admin Dashboard & Bureau Management</h2></div>
+      <div class="dashboard-frame dark"><aside class="sidebar"><b>Master Admin</b><a>Dashboard</a><a>Bureau Requests</a><a>Approved Bureaus</a><a>Users</a><a>Reports</a><a>Settings</a></aside><div class="dash-content"><div class="metric-row four"><div class="metric"><b>128</b><small>Total Bureaus</small></div><div class="metric"><b>18K</b><small>Active Users</small></div><div class="metric"><b>42K</b><small>Total Profiles</small></div><div class="metric"><b>12</b><small>Pending Requests</small></div></div><div class="chart-grid"><div class="chart-card">User Growth</div><div class="chart-card">Bureau Growth</div><div class="chart-card">Registrations Trend</div></div><div class="approval-card"><h3>Bureau Approval</h3><p>Royal Families Bureau • Mumbai • contact@bureau.example</p><button class="btn btn-primary">Approve Bureau & Generate Credentials</button><button class="btn btn-secondary">Reject Bureau</button></div><table><thead><tr><th>Bureau</th><th>Subdomain</th><th>Contact</th><th>Status</th><th>Actions</th></tr></thead><tbody><tr><td>Elite Matchmakers</td><td>elite.matrimonyos.com</td><td>+91 90000 00000</td><td>Active</td><td>View · Suspend · Reset Password</td></tr></tbody></table></div></div>
+    </section>
+
+    <section class="section" id="responsive">
+      <div class="section-heading"><span class="eyebrow">Responsive layouts</span><h2>Desktop, Tablet & Mobile Frames</h2></div>
+      <div class="device-row"><div class="device desktop">Desktop 1440px<br>12-column grid</div><div class="device tablet">Tablet 768px<br>8-column grid</div><div class="device mobile">Mobile 390px<br>Filter drawer & stacked cards</div></div>
+    </section>
+
+    <section class="section" id="prototype-map"><div class="section-heading"><span class="eyebrow">Clickable prototype</span><h2>Production-grade UX Flow Map</h2></div><div class="flow-map"><a href="#landing">Landing</a><span>→</span><a href="#registration">Registration Wizard</a><span>→</span><a href="#login">Login</a><span>→</span><a href="#user-flow">User Dashboard</a><span>→</span><a href="#bureau-admin">Bureau Review</a><span>→</span><a href="#master-admin">Master Admin</a></div></section>
+  </main>
+
+  <footer class="footer">MatrimonyOS design package — Figma-ready components, tokens, responsive frames, and prototype links.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
